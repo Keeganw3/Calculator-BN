@@ -1,20 +1,49 @@
 const plus = document.querySelector('#plus')
 const minus = document.querySelector('#minus')
-const multiply = document.querySelector('#multiply')
-const divide = document.querySelector('#divide')
+const times = document.querySelector('#times')
+const divided = document.querySelector('#divided')
+param1 = 2;
+param2 = 5;
 
-function operate(x,y) {
-    const param1 = 1;
-    const param2 = 2;
-    if {(plus.addEventListener ('click', function (e) {
-        console.log('add')
-    })};
-    else {
-        console.log('X')
-    }
+operate(param1,param2);
+    switch()
+
+function operate(param1,param2) {
+    if (
+        plus.addEventListener ('click', () => {
+            add();
+        })        
+    );
+    else if (
+        minus.addEventListener ('click', () => {
+            subtract();
+        })
+    );
+    else if (
+        times.addEventListener ('click', () => {
+            multiply();
+        })
+    );
+    else if (
+        divided.addEventListener ('click', () => {
+            divide();
+        })
+    );
 }
 
 function add() {
-    
-    return
+    sum = param1 + param2;
+    alert(sum = param1 + param2);
+}
+function subtract() {
+    sum = param1 - param2;
+    alert(sum = param1 - param2);
+}
+function multiply() {
+    sum = param1 * param2;
+    alert(sum = param1 * param2);
+}
+function divide() {
+    sum = param1 / param2;
+    alert(sum = param1 / param2);
 }
