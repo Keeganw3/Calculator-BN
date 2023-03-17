@@ -2,48 +2,52 @@ const plus = document.querySelector('#plus')
 const minus = document.querySelector('#minus')
 const times = document.querySelector('#times')
 const divided = document.querySelector('#divided')
-param1 = 2;
-param2 = 5;
 
-operate(param1,param2);
-    switch()
+while (true) {
+    let param1 = +prompt ('Enter First number:', '');
+    let param2 = +prompt ('Enter Second number:', '');
+    if (!param1 || !param2) break;
+    else
+    operate(param1,param2); break;
+}
+
 
 function operate(param1,param2) {
     if (
         plus.addEventListener ('click', () => {
-            add();
-        })        
+            add(param1,param2);
+        })
     );
     else if (
         minus.addEventListener ('click', () => {
-            subtract();
+            subtract(param1,param2);
         })
     );
     else if (
         times.addEventListener ('click', () => {
-            multiply();
+            multiply(param1,param2);
         })
     );
     else if (
         divided.addEventListener ('click', () => {
-            divide();
+            divide(param1,param2);
         })
     );
 }
 
-function add() {
+function add(param1,param2) {
     sum = param1 + param2;
     alert(sum = param1 + param2);
 }
-function subtract() {
+function subtract(param1,param2) {
     sum = param1 - param2;
     alert(sum = param1 - param2);
 }
-function multiply() {
+function multiply(param1,param2) {
     sum = param1 * param2;
     alert(sum = param1 * param2);
 }
-function divide() {
+function divide(param1,param2) {
     sum = param1 / param2;
     alert(sum = param1 / param2);
 }
